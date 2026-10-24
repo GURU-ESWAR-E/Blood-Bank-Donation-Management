@@ -1,15 +1,23 @@
-// PLACEHOLDER - Member 1 owns this file, will be replaced on merge
 package bloodbank.model;
 
 /**
- * Represents a blood donation event.
+ * Represents an individual blood donation transaction event.
+ * 
+ * Demonstrates:
+ * Encapsulation: Holds transaction data (foreign key donorId, date, and units)
+ * with private fields and immutable read access via public getters.
  */
 public class Donation {
+
+    // Private fields guarantee data hiding and prevent external tampering
     private int donationId;
     private int donorId;
-    private String donationDate; // "yyyy-MM-dd"
+    private String donationDate; // Date represented as ISO "yyyy-MM-dd"
     private int units;
 
+    /**
+     * Constructs a Donation instance representing a completed transaction record.
+     */
     public Donation(int donationId, int donorId, String donationDate, int units) {
         this.donationId = donationId;
         this.donorId = donorId;
