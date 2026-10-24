@@ -1,0 +1,10 @@
+# MySQL Database Configuration for BloodBank
+# Copy this file to 'db.properties' in the project root and fill in your real password.
+# Example:
+#   url=jdbc:mysql://localhost:3306/bloodbank?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+#   user=root
+#   password=your_mysql_password_here
+
+url=jdbc:mysql://localhost:3306/bloodbank?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+user=root
+password=YOUR_PASSWORD_HERE
